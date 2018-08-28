@@ -36,7 +36,7 @@ public class Funcionario {
 	}
 	
 	public double getSalarioBruto() {
-		double salarioBruto = 0.0;
+		double salarioBruto = getSalarioBase();
 		if(getInsalubridade()) {
 			salarioBruto = salarioBase * 1.1;
 		}
