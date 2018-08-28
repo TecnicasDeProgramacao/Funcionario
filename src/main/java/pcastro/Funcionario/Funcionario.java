@@ -51,6 +51,7 @@ public class Funcionario {
 		double INSS = 0.045;
 		double descontoINSS = getSalarioBase() * INSS;
 		double impostoDeRenda = 0.0;
+		
 		if(getSalarioBase() > 5000.00){
 			descontoINSS = 5000.00 * INSS;
 		}
