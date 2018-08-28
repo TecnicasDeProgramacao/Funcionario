@@ -1,9 +1,3 @@
-//Local insalubre 10% sobre o salario base, 1% sobre o salario base para cada dependente declarado
-//Salario bruto = salariobase + adicionais
-//Salario liquido = salarioBruto - (INSS + imposto de renda devidos)
-//INSS 4,5% do salario base limitado ao teto 5000,00
-//Imposto de renda sobre o salario base  2000 isenta, 2001 até 5000 paga 12% e superior a 5000 paga 27,5%
-
 package pcastro.Funcionario;
 
 public class Funcionario {
@@ -72,13 +66,5 @@ public class Funcionario {
 			salarioLiquido = getSalarioBruto() - (impostoDeRenda + descontoINSS);
 		}
 		return salarioLiquido;
-	}
-	
-	public static void main(String[] args) {
-		Funcionario f1 = new Funcionario(10, "Pedro", 5000.0, 2, true);
-		System.out.println("Salário Bruto: " +f1.getSalarioBruto());
-		System.out.println("Salário Base: " +f1.getSalarioBase());
-		System.out.println("Salário Líquido: " +f1.getSalarioLiquido());
-		
 	}
 }
